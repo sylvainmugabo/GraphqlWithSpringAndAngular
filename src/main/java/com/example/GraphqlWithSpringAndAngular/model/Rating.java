@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.example.GraphqlWithSpringAndAngular.model;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 

@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.example.GraphqlWithSpringAndAngular.model;
 
 public record Book(Integer id, String title, Integer pages, Rating rating, Author author) {
 

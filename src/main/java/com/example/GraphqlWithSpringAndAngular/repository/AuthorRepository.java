@@ -1,4 +1,4 @@
-package com.example.demo.repository;
+package com.example.GraphqlWithSpringAndAngular.repository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import javax.annotation.PostConstruct;
 
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.model.Author;
+import com.example.GraphqlWithSpringAndAngular.model.*;
 
 @Repository
 public class AuthorRepository {
