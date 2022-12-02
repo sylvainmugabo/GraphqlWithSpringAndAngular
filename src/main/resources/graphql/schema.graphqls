@@ -21,4 +21,10 @@ type Author {
 type Query {
   allBooks: [Book]
   findOne(id: ID!): Book
+  findAuthors: [Author]
+  findById(id: ID): Author
+}
+
+type Mutation {
+  createBook(title: String!, page: Int!, rating: Int!, authorId: Int!): Book!
 }

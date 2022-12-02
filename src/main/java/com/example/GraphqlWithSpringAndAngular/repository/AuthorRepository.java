@@ -21,11 +21,19 @@ public class AuthorRepository {
 
     }
 
+    public List<Author> findAuthors() {
+        return authors;
+    }
+
     public Author findByName(String name) {
         return authors.stream()
                 .filter(author -> author.fullName().equals(name))
                 .findFirst()
                 .orElseThrow(() -> new RuntimeException("Author not found"));
+    }
+
+    public List<Book> books(Author author, BookRepository repo) {
+        return repo.findAll().stream().filter(b -> b.authorId().equals(author.id())).toList();
     }
 
     @PostConstruct

@@ -7,7 +7,8 @@ public enum Rating {
     FOUR_STARS("⭐️⭐️⭐️⭐️"),
     THREE_STARS("⭐️⭐️⭐️"),
     TWO_STARS("⭐️⭐️"),
-    ONE_STAR("⭐️");
+    ONE_STAR("⭐️"),
+    UNKOWN("");
 
     private String star;
 
